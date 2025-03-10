@@ -58,6 +58,11 @@ p {
 
     box-sizing: border-box;
     width: 50%;
+
+    @include small {
+        width: 70%;
+        font-size: 0.9rem;
+    }
 }
 
 #center-aligned-text {
