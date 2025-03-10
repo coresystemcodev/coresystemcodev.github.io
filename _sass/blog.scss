@@ -41,6 +41,24 @@ $on-laptop:        54em !default;
   font-size: $base-font-size * $ratio;
 }
 
+@mixin large {
+  @media screen and (min-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: #{$medium-breakpoint}) {
+    @content;
+  }
+}
+
 // Import partials.
 @import "blog/base";
 @import "blog/layout";

@@ -89,14 +89,14 @@ p {
 
     @include medium {
         margin-top: 45px;
-        max-width: 25vw;
-        max-height: 25vw;
+        max-width: 22vw;
+        max-height: 22vw;
     }
 
     @include small {
         margin-top: 60px;
-        max-width: 28vw;
-        max-height: 28vw;
+        max-width: 20vw;
+        max-height: 20vw;
     }
 }
 

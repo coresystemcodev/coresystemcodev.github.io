@@ -172,11 +172,11 @@ a {
   }
 
   @include medium {
-    font-size: 2.25rem;
+    font-size: 2.0rem;
   }
 
   @include small {
-    font-size: 1.75rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -192,11 +192,11 @@ a {
   }
 
   @include medium {
-    font-size: 1.15rem;
+    font-size: 1.0rem;
   }
 
   @include small {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 }
 

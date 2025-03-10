@@ -1,9 +1,14 @@
 ---
 layout: page
-title: Contact
-tagline: Please send us an email or LinkedIn message for any queries
+title: CONTACT
 permalink: /contact.html
 ---
+
+<p id="center-aligned-text">
+    Please send us an email or LinkedIn message for any queries.
+</p>
+
+<br/>
 
 <nav class="my-site-nav line">
     <div id="center-aligned-text">
@@ -32,7 +37,7 @@ permalink: /contact.html
                     </g>
                 </svg>
             </span>
-            <span>&rarr; {{ site.title }}</span>
+            <span>&rarr; {{ site.author }}</span>
         </a>
     </div>
 </nav>
