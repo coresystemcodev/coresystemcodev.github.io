@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="theme-color" content="#333944"/>
+
+    {% if page.title %}
+      {% assign page-title = page.title | escape %}
+    {% else %}
+      {% assign page-title = site.title | escape %}
+    {% endif %}
+
+    <title>{{ page-title }}</title>
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}"/>
+  
+    <meta name="keywords" itemprop="keywords" content="{{ site.keywords | escape }}"/>
+
+    <meta name="description" content="{{ site.description }}"/>
+
+    <meta name="author" content="{{ site.author }}">
+
+    <meta name="robots" content="noarchive"/>
+
+    <link rel="stylesheet" href="{{ site.url }}{{ site.baseurl }}/static/css/style.css"/>
+
+    <!-- Site thumbnail icon/favicon: -->
+    <link rel="icon" type="image/x-icon" href="{{ "/static/images/thumbnail-icon.png" | prepend: site.baseurl }}">
+    <link rel="apple-touch-icon" href="{{ "/static/images/apple-touch-icon.png" | prepend: site.baseurl }}">
+
+  </head>
+
+  <body>
+    <header class="site-header" role="banner">
+      <div class="wrapper">
+        {% assign default_paths = site.pages | map: "path" %}
+        {% assign page_paths = site.header_pages | default: default_paths %}
+    
+        {% if page.layout != 'home' %}
+          <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        {% endif %}
+    
+        {% if page_paths %}
+          <nav class="site-nav line">
+            <div>
+              {% for path in page_paths %}
+                {% assign my_page = site.pages | where: "path", path | first %}
+                {% if my_page.title %}
+                  {% if my_page.title contains "404" %}
+                  {% else %}
+                    <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          </nav>
+        {% endif %}
+      </div>
+    </header>
+
+    {% assign page-tagline = page.tagline | default: site.description | escape %}
+
+    <section class="page-header">
+      <div>
+        <div class="float-header-icon">
+          <img src="{{ "static/images/banner-icons.png" | prepend: site.baseurl }}" id="banner-icons">
+        </div>
+        <div class="float-header-textbox">
+          <div style="width: fit-content; block-size: fit-content;">
+            <h1 class="project-name">{{ page-title }}</h1>
+            <h2 class="project-tagline">{{ page-tagline }}</h2>
+        </div>
+
+        </div>
+      </div>
+
+      <div style="clear: both;"></div>
+
+      {% if page.layout == 'post' %}
+        <h2 class="project-date">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {% assign date_format = site.hydrogen-blog.date_format | default: "%b %-d, %Y" %}
+          {{ page.date | date: date_format }}
+        </time>
+        {% assign page_author = page.author | default: site.author | default: nil | escape %}
+        {% if page_author %}
+          • <span itemprop="author" itemscope itemtype=""><span itemprop="name">{{ page_author }}</span></span>
+        {% endif %}
+        </h2>
+      {% endif %}
+    </section>
+
+    <section class="main-content fade">
+
+      {{ content }}
+
+      <footer class="site-footer">
+        <span class="site-footer-owner">
+          <a href="/contact.html">
+            <svg fill="#42948A" width="16px" height="16px" viewBox="0 -8 64 64">
+              <path id="Mail" d="M58.0034485,8H5.9965506c-3.3136795,0-5.9999995,2.6862001-5.9999995,6v36c0,3.3137016,2.6863203,6,5.9999995,6
+                  h52.006897c3.3137016,0,6-2.6862984,6-6V14C64.0034485,10.6862001,61.3171501,8,58.0034485,8z M62.0034485,49.1108017
+                  L43.084549,30.1919994l18.9188995-12.0555992V49.1108017z M5.9965506,10h52.006897c2.2056007,0,4,1.7943001,4,4v1.7664003
+                  L34.4677505,33.3134003c-1.4902,0.9492989-3.3935013,0.9199982-4.8495998-0.0703011L1.9965508,14.4694996V14
+                  C1.9965508,11.7943001,3.7910507,10,5.9965506,10z M1.9965508,16.8852005L21.182251,29.9251003L1.9965508,49.1108017V16.8852005z
+                  M58.0034485,54H5.9965506c-1.6473999,0-3.0638998-1.0021019-3.6760998-2.4278984l20.5199013-20.5200024l5.6547985,3.843401
+                  c1.0859013,0.7383003,2.3418007,1.1083984,3.5995998,1.1083984c1.1953011,0,2.3925018-0.3339996,3.4463005-1.0048981
+                  l5.8423996-3.7230015l20.2961006,20.2961025C61.0673485,52.9978981,59.6508713,54,58.0034485,54z"/>
+            </svg>
+            Contact us
+          </a>
+        </span>
+
+        <span class="site-footer-credits">
+          {{ site.copyright_notice }}
+        </span>
+        <br/>
+      </footer>
+    </section>
+  </body>
+
+</html>

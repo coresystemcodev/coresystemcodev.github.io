@@ -1,0 +1,24 @@
+title: Core System Co-Dev
+description: Games Software Engineering Co-Development & Consultancy
+author: Core System Co-Dev
+
+baseurl: "" # change this to the subpath of your site, e.g. /blog. Leave it empty if in root.
+url: "" # change this to the base hostname & protocol for your site
+
+keywords: C,C++,Rust,development,co-development,consultancy,contractor,software engineering,game development,rendering,computer graphics,animation,source code,performance optimization,code review,programming
+
+copyright_notice: "Copyright © 2025: Core System Co-Dev"
+
+contact_email: coresystemcodev@gmail.com
+contact_linkedin: CoreSystemCodev
+
+# Automatic sitemap.xml generator:
+jekyll-sitemap: true
+
+plugins:
+  - jekyll-sitemap
+
+# silence Dart sass deprecation warnings.
+sass:
+  quiet_deps: true
+  silence_deprecations: [import]

@@ -1,0 +1,140 @@
+
+p {
+    text-align: justify;
+}
+
+.site-header {
+    background-color: #333944;
+}
+
+.page-header {
+    background: url("../images/banner-background.png") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+#profile-pic {
+    border: 5px solid rgb(46, 130, 118);
+    border-radius: 80px;
+    background-color: rgb(46, 130, 118);
+    float: left;
+
+    margin-bottom: 25px;
+    margin-right: 25px;
+
+    @include large {
+        max-width: 135px;
+        max-height: 135px;
+        margin-top: 20px;
+    }
+
+    @include medium {
+        max-width: 115px;
+        max-height: 115px;
+        margin-top: 25px;
+    }
+
+    @include small {
+        max-width: 100px;
+        max-height: 100px;
+        margin-top: 40px;
+    }
+}
+
+#home-button-link {
+    color: white;
+    background-color: rgb(46, 130, 118);
+    border-top: 8px solid rgb(46, 130, 118);
+    border-bottom: 8px solid rgb(46, 130, 118);
+    border-left: 4vw solid rgb(46, 130, 118);
+    border-right: 4vw solid rgb(46, 130, 118);
+    text-align: center;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+    width: 50%;
+}
+
+#center-aligned-text {
+    text-align: center;
+}
+
+#services-icon {
+    max-width: 7vw;
+    max-height: 7vw;
+
+    min-width: 50px;
+    min-height: 50px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: auto;
+}
+
+#banner-icons {
+    margin-left: auto;
+    margin-right: 30px;
+
+    @include large {
+        margin-top: 40px;
+        max-width: 20vw;
+        max-height: 20vw;
+    }
+
+    @include medium {
+        margin-top: 45px;
+        max-width: 25vw;
+        max-height: 25vw;
+    }
+
+    @include small {
+        margin-top: 60px;
+        max-width: 28vw;
+        max-height: 28vw;
+    }
+}
+
+.float-child-textbox {
+    width: 80%;
+    float: left;
+}  
+
+.float-child-icon {
+    width: 10vw;
+    min-width: 64px;
+    float: left;
+}
+
+.float-header-textbox {
+    float: left;
+    width: 60%;
+
+    @include large {
+        padding-top: 3vw;
+        padding-left: 0vw;
+    }
+
+    @include medium {
+        padding-top: 2vw;
+        padding-left: 3vw;
+    }
+
+    @include small {
+        padding-left: 4vw;
+    }
+}  
+
+.float-header-icon {
+    float: left;
+    width: 30vw;
+}
+
+.my-site-nav .site-nav {
+    float: right;
+}
