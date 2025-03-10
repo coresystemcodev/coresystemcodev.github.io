@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
     <!-- Prevent iOS browser from changing background colors -->
-    <meta name="theme-color" content="#333944"/>
+    <meta name="theme-color" content="#202429"/>
     <meta name="color-scheme" content="dark only">
 
     {% if page.title %}
@@ -16,7 +16,14 @@
       {% assign page-title = site.title | escape %}
     {% endif %}
 
-    <title>{{ page-title }}</title>
+    {% assign words = page-title | split: ' ' %}
+    {% capture titlecase %}
+      {% for word in words %}
+        {{ word | capitalize }}
+      {% endfor %}
+    {% endcapture %}
+
+    <title>{{ titlecase }}</title>
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}"/>
   

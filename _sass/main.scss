@@ -2,24 +2,6 @@
 @import "variables";
 @import "blog";
 
-@mixin large {
-  @media screen and (min-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin medium {
-  @media screen and (min-width: #{$medium-breakpoint}) and (max-width: #{$large-breakpoint}) {
-    @content;
-  }
-}
-
-@mixin small {
-  @media screen and (max-width: #{$medium-breakpoint}) {
-    @content;
-  }
-}
-
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color:transparent
@@ -42,6 +24,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: $body-text-color;
+  background-color: rgb(32, 36, 41);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -196,7 +179,7 @@ a {
   }
 
   @include small {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
   }
 }
 
