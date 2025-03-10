@@ -27,7 +27,7 @@ permalink: /contact.html
     </div>
     <br/>
     <div id="center-aligned-text">
-        <a href="https://www.linkedin.com/in/{{ site.contact_linkedin }}" id="home-button-link">
+        <a href="https://www.linkedin.com/company/{{ site.contact_linkedin }}" id="home-button-link">
             <span>
                 <svg fill="white" viewBox="0 0 310 310" height="16px" width="16px">
                     <g>
