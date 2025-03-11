@@ -59,8 +59,12 @@ p {
     box-sizing: border-box;
     width: 50%;
 
-    @include small {
+    @include medium {
         width: 70%;
+    }
+
+    @include small {
+        width: 85%;
         font-size: 0.9rem;
     }
 }
