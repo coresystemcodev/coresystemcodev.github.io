@@ -23,13 +23,13 @@ We are a small enterprise specializing in co-development and consulting for the 
 
 <br/>
 
-With nearly a decade of experience in game development, Guilherme has worked across both AAA and indie spaces, focusing on Game Engines, Computer Graphics and Animation for Console and PC platforms. He has been writing code for over 15 years, both as a hobby and professionally. His expertise is built on programming languages such as C, C++, and Rust.
+With over a decade of experience in game development, Guilherme has worked across both AAA and indie spaces, focusing on Game Engines, Computer Graphics and Animation for Console and PC platforms. His expertise is built on programming languages such as C++, C and Rust.
 
 Guilherme's experience includes working as Principal Engine Programmer at [PlayStation London Studio][link_psls] with their core technology team, where he spearheaded the development of a proprietary game engine and tech stack targeting PlayStation 5 and PC. In this role, he developed the gameplay scripting solution for the engine, a custom C++ runtime reflection system, a data serialization and rewind system for network rollback, and played a key role in the design and implementation of the multithreaded Entity Component System (ECS) that powered the engine. Guilherme was also a mentor for the team on best programming practices and fostered a culture of code reviewing and testing automation.
 
 Before PlayStation, Guilherme worked on the critically acclaimed [*Red Dead Redemption 2*][link_rdr2] at [Rockstar Games][link_rsg], focusing on the low-level animation systems within the Rockstar Advanced Game Engine (RAGE). His work as Animation Systems Programmer was centered around performance-critical components of the animation subsystems, including the streaming and playback of animation data, animation compression/decompression, and memory management.
 
-In his spare time, Guilherme enjoys working on hobby projects and exploring other areas of game development, such as Rendering and Computer Graphics, reverse engineering classic games, and homebrew development for classic game consoles.
+In his spare time, Guilherme enjoys working on hobby projects and exploring other areas of game development, such as Rendering and Computer Graphics, reverse engineering classic games and homebrew development for classic gaming consoles. He has been writing code for over 15 years, both as a hobby and professionally.
 
 [link_rdr2]: https://en.wikipedia.org/wiki/Red_Dead_Redemption_2
 [link_rsg]:  https://www.rockstarnorth.com
