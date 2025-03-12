@@ -19,7 +19,7 @@ We are a small enterprise specializing in co-development and consulting for the 
 <br/>
 
 ## Guilherme Lampert
-#### Founder and Chief Software Engineer
+#### Founder & Chief Software Engineer
 
 <br/>
 
