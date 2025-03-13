@@ -23,16 +23,16 @@ We are a small enterprise specializing in co-development and consulting for the 
 
 <br/>
 
-With over a decade of experience in game development, Guilherme has worked across both AAA and indie spaces, focusing on Game Engines, Computer Graphics and Animation for Console and PC platforms. His expertise is built on programming languages such as C++, C and Rust.
+Guilherme is a seasoned software engineer with over a decade of experience in game development, working across both AAA and indie projects. He specializes in game engines, computer graphics and animation, with a focus on console and PC platforms. With deep expertise in C++, he is highly skilled in developing high-performance systems and low-level programming. He is also proficient in C and Rust, leveraging these languages to solve complex engineering challenges in various areas of game development.
 
-Guilherme's experience includes working as Principal Engine Programmer at Sony's [PlayStation London Studio][link_psls] with their core technology team, where he spearheaded the development of a proprietary game engine and tech stack targeting PlayStation 5 and PC. In this role, he developed the gameplay scripting solution for the engine, a custom C++ runtime reflection system, a data serialization and rewind system for network rollback, and played a key role in the design and implementation of the multithreaded Entity Component System (ECS) that powered the engine. He also mentored the team on best programming practices and fostered a culture of code reviewing and testing automation.
+Most recently, Guilherme served as Principal Engine Programmer at Sony's [PlayStation London Studio][link_psls], where he spearheaded the core technology team in the development of a proprietary game engine and tech stack for PlayStation 5 and PC platforms. He designed and implemented key engine features, including a custom C++ runtime reflection system, network rollback serialization for multiplayer and a multithreaded and Data Oriented Entity Component System (ECS) to optimize the engine's performance. Additionally, he developed the gameplay scripting solution for the engine and played a key role in mentoring the team, fostering a culture of best programming practices, code reviews and test automation to ensure both code quality and project efficiency.
 
-Before PlayStation, Guilherme worked on the critically acclaimed [*Red Dead Redemption 2*][link_rdr2] at [Rockstar Games][link_rsg], focusing on the low-level animation systems within the Rockstar Advanced Game Engine (RAGE). His work as Animation Systems Programmer was centered around performance-critical components of the animation subsystems, including the streaming and playback of animation data, animation compression/decompression, and memory management.
+Before joining PlayStation, Guilherme contributed to the critically acclaimed [*Red Dead Redemption 2*][link_rdr2] at [Rockstar Games][link_rsg], focusing on the low-level animation systems within the Rockstar Advanced Game Engine (RAGE). As an Animation Systems Programmer, he worked on performance-critical components such as animation data streaming, compression & decompression and memory management to ensure smooth, high-quality animations in the game.
 
-In his spare time, Guilherme enjoys working on hobby projects and exploring other areas of game development, such as Rendering and Computer Graphics, reverse engineering classic games and homebrew development for classic gaming consoles. He has been writing code for over 15 years, both as a hobby and professionally.
+Outside of work, Guilherme is passionate about game development in all its forms, dedicating his time to hobby projects and exploring fields like rendering, computer graphics, reverse engineering classic games and homebrew development for retro consoles. With over 15 years of experience writing code, Guilherme continues to grow both as a professional and a hobbyist in the game development community.
 
-[link_rdr2]: https://en.wikipedia.org/wiki/Red_Dead_Redemption_2
 [link_rsg]:  https://www.rockstarnorth.com
+[link_rdr2]: https://en.wikipedia.org/wiki/Red_Dead_Redemption_2
 [link_psls]: https://www.playstation.com/en-gb/corporate/playstation-studios/
 
 **Find Guilherme on:**
