@@ -4,7 +4,7 @@ title: ABOUT US
 permalink: /about.html
 ---
 
-We are a small enterprise specializing in co-development and consulting for the gaming industry. Whether you need developers to assist with final polish and bug fixing before release, integrate third-party middleware into your custom game engine, develop new tools and pipelines, optimize code, or port your project to a new platform, we have the expertise to help you achieve your goals and deliver the best version of your project.
+We specialize in co-development and consulting for the gaming industry. Whether you need developers to assist with final polish and bug fixing before release, integrate third-party middleware into your custom game engine, develop new tools and pipelines, optimize code, or port your project to a new platform, we have the expertise to help you achieve your goals and deliver the best version of your project.
 
 <div class="site-footer"></div>
 
