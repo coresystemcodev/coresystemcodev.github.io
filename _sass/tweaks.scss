@@ -18,6 +18,39 @@ p {
     text-align: center;
 }
 
+.header-centered-section {
+    background: url("../images/banner-background.png") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally within page/parent */
+    align-items: center;     /* Center vertically within section */
+    //min-height: 60vh;      /* Optional: vertical spacing */
+    padding: 2rem;
+}
+
+.header-content-wrapper {
+    display: flex;
+    align-items: center;     /* Vertically align image and text */
+    justify-content: center; /* Center the whole pair inside the section */
+    gap: 2rem;               /* Space between image and text */
+    flex-wrap: nowrap;       /* Prevent wrapping on small screens */
+}
+
+.header-icon {
+    max-width: 100%;
+    height: auto;            /* Maintain aspect ratio */
+    display: block;
+}
+
+.header-textbox {
+    max-width: 500px;        /* Optional: control text line length */
+    font-family: "RobotoRegular", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 #profile-pic {
     border: 5px solid rgb(46, 130, 118);
     border-radius: 80px;
@@ -87,26 +120,9 @@ p {
 }
 
 #banner-icons {
-    margin-left: auto;
-    margin-right: 30px;
-
-    @include large {
-        margin-top: 40px;
-        max-width: 20vw;
-        max-height: 20vw;
-    }
-
-    @include medium {
-        margin-top: 45px;
-        max-width: 22vw;
-        max-height: 22vw;
-    }
-
-    @include small {
-        margin-top: 60px;
-        max-width: 20vw;
-        max-height: 20vw;
-    }
+    margin-top: 60px;
+    max-width: 15vw;
+    max-height: 15vw;
 }
 
 .float-child-textbox {
@@ -123,20 +139,6 @@ p {
 .float-header-textbox {
     float: left;
     width: 60%;
-
-    @include large {
-        padding-top: 3vw;
-        padding-left: 0vw;
-    }
-
-    @include medium {
-        padding-top: 2vw;
-        padding-left: 3vw;
-    }
-
-    @include small {
-        padding-left: 4vw;
-    }
 }  
 
 .float-header-icon {

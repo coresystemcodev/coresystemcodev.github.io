@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ABOUT US
+title: About
 permalink: /about.html
 ---
 
@@ -19,7 +19,7 @@ We specialize in co-development and consulting for the gaming industry. Whether 
 <br/>
 
 ## Guilherme Lampert
-#### Founder & Chief Software Engineer
+#### Founder & Principal Software Engineer
 
 <br/>
 
