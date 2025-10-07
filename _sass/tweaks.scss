@@ -19,7 +19,7 @@ p {
 }
 
 .header-centered-section {
-    background: url("../images/banner-background.png") no-repeat center;
+    background: url("../images/new-site-banner.png") no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -28,8 +28,19 @@ p {
     display: flex;
     justify-content: center; /* Center horizontally within page/parent */
     align-items: center;     /* Center vertically within section */
-    //min-height: 60vh;      /* Optional: vertical spacing */
     padding: 2rem;
+
+    @include large {
+        min-height: 48vh;
+    }
+
+    @include medium {
+        min-height: 40vh;
+    }
+
+    @include small {
+        min-height: 30vh;
+    }
 }
 
 .header-content-wrapper {

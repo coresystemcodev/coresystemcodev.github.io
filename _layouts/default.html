@@ -68,8 +68,9 @@
     {% assign page-tagline = page.tagline | default: site.description | escape %}
 
     <section class="header-centered-section">
+      <!--
+      Uncomment to use dynamic text & background rather than the fixed site banner:
       <div class="header-content-wrapper">
-
         <div class="header-icon">
           <img src="{{ "static/images/banner-icons.png" | prepend: site.baseurl }}" id="banner-icons">
         </div>
@@ -82,8 +83,8 @@
               & CONSULTING
             </h2>
         </div>
-
       </div>
+      -->
 
       {% if page.layout == 'post' %}
         <h2 class="project-date">
